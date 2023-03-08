@@ -1,0 +1,115 @@
+.header-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+
+	.user-profile {
+		display: flex;
+		align-items: center;
+		width: 125px;
+		height: 65px;
+		justify-content: space-between;
+
+		.img-wrapper {
+			position: relative;
+
+			span {
+				position: absolute;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #F53361;
+				color: #FFFFFF;
+				font-size: 11px;
+				width: 13px;
+				height: 13px;
+				border-radius: 50%;
+				top: 0;
+				right: 0;
+
+				span {
+					margin: 2px 0 0 1px;
+				}
+			}
+		}
+
+		.user {
+			width: 66px;
+			height: 66px;
+			border-radius: 50%;
+			background-color: #F53361;
+
+			img {
+				width: 66px;
+				height: 66px;
+			}
+		}
+	}
+}
+
+.dashboard {
+	span {
+		color: var(--unnamed-color-6d32a5);
+		font-size: 15px;
+		font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-15)/var(--unnamed-line-spacing-50) var(--unnamed-font-family-circular);
+		letter-spacing: var(--unnamed-character-spacing-0);
+		color: var(--unnamed-color-6d32a5);
+		text-align: left;
+		text-transform: uppercase;
+	}
+}
+
+.insights-wrapper {
+	display: flex;
+
+	.header {
+		span {
+			font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 60px/76px var(--unnamed-font-family-circular);
+			letter-spacing: var(--unnamed-character-spacing-0);
+			color: var(--unnamed-color-05081d);
+			text-align: left;
+
+		}
+	}
+
+	.info-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 85%;
+		gap: 135px;
+
+		.info {
+			position: relative;
+
+			img {
+				position: absolute;
+				top: 16px;
+				right: -20px;
+			}
+
+			.info-name {
+				font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-15)/var(--unnamed-line-spacing-50) var(--unnamed-font-family-circular);
+				letter-spacing: var(--unnamed-character-spacing-0);
+				color: var(--unnamed-color-a3a6b9);
+				text-align: left;
+				text-transform: uppercase;
+			}
+
+			.info-num {
+				font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 30px/37px Roboto;
+				letter-spacing: var(--unnamed-character-spacing-0);
+				color: var(--unnamed-color-05081d);
+				text-align: left;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+hr {
+	margin: 80px 0;
+	border: -1px solid #f5f5f631;
+	border-radius: 50%;
+}

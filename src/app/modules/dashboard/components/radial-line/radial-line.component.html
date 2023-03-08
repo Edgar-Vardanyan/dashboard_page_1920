@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <div class="pie-wrapper">
+    <app-pie-chart
+      [chartType]="'donut'"
+      [chartTitle]="'Tasks Review Date'"
+      [titleOptions]="'All phases'"
+      [legends]="['Reviewed tasks', 'Not reviewed tasks']"
+      [percents]="[26, 18]"
+    ></app-pie-chart>
+  </div>
+
+  <div class="line-wrapper">
+    <app-column-table
+      [distributed]="false"
+      [legendState]="true"
+      [threeLines]="true"
+      [chartTitle]="'Completion Rate'"
+      [titleOptions]="['All']"
+      [data]="[
+        { name: 'Completed On Time', data: [4.5, 3.9, 2.6, 0.7] },
+        { name: 'Completed Over Due Date', data: [1.8, 2.4, 2, 0.3] },
+        { name: 'Not Completed', data: [0.4, 0.2, 4.1, 5.7] }
+      ]"
+      [barWidth]="'40%'"
+      [barColors]="['#43BCCD', '#6D32A5', '#F53361']"
+    ></app-column-table>
+  </div>
+</div>

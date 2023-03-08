@@ -1,0 +1,259 @@
+<div class="section-wrapper">
+
+	<div class="recent-task-wrapper">
+
+		<div class="chart-title">
+			<div class="title">Recent Tasks To Review</div>
+			<div class="sortable">
+	
+				<div class="sort">
+					<span>All Phases</span>
+					<img src="/assets/svg/chevron-thin-down-1.svg" alt="">
+				</div>
+	
+			</div>
+	
+		</div>
+
+		<div class="pages">
+			<img (click)="slidePrev()" class="arrow-left" src="/assets/svg/chevron-thin-down.svg" alt="">
+			<span class="pages-text">{{swiperPage}}/{{swiperPageCount}}</span>
+			<img (click)="slideNext()" class="arrow-right" src="/assets/svg/chevron-thin-down.svg" alt="">
+		</div>
+
+
+		<swiper #swiper (slideChange)="onSlideChange()" [pagination]="true" [scrollbar]="{ draggable: false }" [navigation]="false" [allowTouchMove]="false" class="mySwiper">
+			
+			<ng-template swiperSlide>
+
+			
+				<div class="title-of-the-task">
+			
+					<div class="title-card">
+			
+						<div class="date">
+							<span class="date-text">Oct 6th, 2020</span>
+							<span class="category">UI /UX DESIGNER</span>
+						</div>
+			
+						<div class="title">Title of the task with a short description</div>
+			
+						<div class="card-content-wrapper">
+			
+							<div class="project-wrapper">
+								<div class="project-name">Name of the project</div>
+								
+								<div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</div>
+							</div>
+			
+							<div class="button-wrapper">
+			
+								<img src="/assets/svg/Raggruppa 2972.svg" alt="">	
+								<img src="/assets/svg/Raggruppa 2971.svg" alt="">
+								
+							</div>
+			
+						</div>
+			
+						<div class="info-wrapper">
+			
+							<div class="info">
+								<img src="/assets/svg/Raggruppa 2919.svg" alt="">
+								<span class="info-text">10 comments</span>
+							</div>
+			
+							<div class="info">
+								<img src="/assets/svg/paperclip.svg" alt="">
+								<span class="info-text">5 attachments</span>
+							</div>
+			
+							<div class="info">
+								<img src="/assets/svg/Raggruppa 2977.svg" alt="">
+								<span class="info-text">Normal priority</span>
+							</div>
+			
+							<div class="info">
+								<img src="/assets/svg/Raggruppa 2979.svg" alt="">
+								<span class="info-text">High criticality</span>
+							</div>
+			
+							<div class="jira">
+			
+								<span class="jira-text">Integrated with Jira</span>
+			
+								<img src="/assets/svg/jira-seeklogo.com.svg" alt="">
+			
+						</div>
+			
+						</div>
+			
+			
+			
+					</div>
+			
+				</div>
+			</ng-template>
+
+			<ng-template swiperSlide>
+				
+			
+				<div class="title-of-the-task">
+			
+					<div class="title-card">
+			
+						<div class="date">
+							<span class="date-text">Oct 6th, 2020</span>
+							<span class="category">UI /UX DESIGNER</span>
+						</div>
+			
+						<div class="title">Title of the task with a short description</div>
+			
+						<div class="card-content-wrapper">
+			
+							<div class="project-wrapper">
+								<div class="project-name">Name of the project</div>
+								
+								<div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</div>
+							</div>
+			
+							<div class="button-wrapper">
+			
+								<img src="/assets/svg/Raggruppa 2972.svg" alt="">
+								<img src="/assets/svg/Raggruppa 2971.svg" alt="">
+								
+							</div>
+			
+						</div>
+			
+						<div class="info-wrapper">
+			
+							<div class="info">
+								<img src="/assets/svg/Raggruppa 2919.svg" alt="">
+								<span class="info-text">10 comments</span>
+							</div>
+			
+							<div class="info">
+								<img src="/assets/svg/paperclip.svg" alt="">
+								<span class="info-text">5 attachments</span>
+							</div>
+			
+							<div class="info">
+								<img src="/assets/svg/Raggruppa 2977.svg" alt="">
+								<span class="info-text">Normal priority</span>
+							</div>
+			
+							<div class="info">
+								<img src="/assets/svg/Raggruppa 2979.svg" alt="">
+								<span class="info-text">High criticality</span>
+							</div>
+			
+							<div class="jira">
+			
+								<span class="jira-text">Integrated with Jira</span>
+			
+								<img src="/assets/svg/jira-seeklogo.com.svg" alt="">
+			
+						</div>
+			
+						</div>
+			
+			
+			
+					</div>
+			
+				</div>
+
+			</ng-template>
+
+		</swiper>
+
+
+
+	
+
+	
+	</div>
+
+
+	<div class="current-state-wrapper">
+
+		<div class="chart-title">
+			<div class="title">Current State</div>
+			<div class="sortable">
+	
+				<div class="sort">
+					<span>All</span>
+					<img src="/assets/svg/chevron-thin-down-1.svg" alt="">
+				</div>
+	
+			</div>
+		</div>
+
+		<div class="info-wrapper">
+
+			<div class="percent-wrapper">
+				<img src="/assets/svg/Raggruppa 3155.svg" alt="">
+				<div class="percent">
+					<span class="percent-text">79%</span>
+					<span class="percent-state">Completed</span>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="percent-wrapper">
+				<img src="/assets/svg/Raggruppa 3001.svg" alt="">
+				<div class="percent">
+					<span class="percent-text">22</span>
+					<span class="percent-state">Days To Go</span>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="tasks-info">
+
+			<div class="info">
+				<span class="title">Tasks</span>
+				<span class="count">36/48</span>
+			</div>
+
+			<div class="info">
+				<span class="title">Completion rate</span>
+				<span class="count">-8%</span>
+			</div>
+
+			<div class="info">
+				<span class="title">Transition timeframe</span>
+				<span class="count">56 days</span>
+			</div>
+
+		</div>
+
+		<div class="progress-wrapper">
+			<div class="cyan"></div>
+			<div class="purple"></div>
+			<div class="red"></div>
+		</div>
+
+		<div class="colors-wrapper">
+			<div class="color">
+				<div class="circle-1"></div>
+				<div class="text">Current state</div>
+			</div>
+
+			<div class="color">
+				<div class="circle-2"></div>
+				<div class="text">Agreed timing</div>
+			</div>
+
+			<div class="color">
+				<div class="circle-3"></div>
+				<div class="text">Time left</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+

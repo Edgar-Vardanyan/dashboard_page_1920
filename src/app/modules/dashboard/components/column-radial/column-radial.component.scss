@@ -1,0 +1,28 @@
+.section-wrapper {
+	display: flex;
+	justify-content: space-between;
+
+	.column-wrapper {
+		width: 1047px;
+		padding-top: 40px;
+		margin-top: 20px;
+		background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+		box-shadow: 0px 3px 26px #00000008;
+		border-radius: 30px;
+
+	}
+
+	.pie-wrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 579px;
+		margin-top: 20px;
+		background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+		box-shadow: 0px 3px 26px #00000008;
+		border-radius: 30px;
+	}
+
+
+}

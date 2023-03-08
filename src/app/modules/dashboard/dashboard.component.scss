@@ -1,0 +1,51 @@
+.dashboard-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #F5F5F6;
+	padding: 25px 40px 25px 125px;
+	max-width: 1920px;
+
+	.dashboard-header-wrapper {
+		width: 100%;
+		max-width: 1920px;
+	}
+
+	.dashboard-task-add-wrapper {
+		width: 100%;
+		max-width: 1920px;
+	}
+
+	.dashboard-column-radial-wrapper {
+		width: 100%;
+		max-width: 1920px;
+	}
+
+	.dashboard-line-chart-wrapper {
+		width: 100%;
+		max-width: 1920px;
+	}
+
+	.dashboard-radial-line-wrapper {
+		width: 100%;
+		max-width: 1920px;
+	}
+
+	.dashboard-expansion-wrapper {
+		width: 100%;
+		max-width: 1920px;
+	}
+
+	.dashboard-recent-tasks-review-wrapper {
+		width: 100%;
+		max-width: 1920px;
+	}
+
+	.dashboard-task-approval-rate-wrapper {
+		width: 100%;
+		max-width: 1920px;
+	}
+
+}
+

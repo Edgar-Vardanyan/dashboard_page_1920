@@ -1,0 +1,24 @@
+<div class="section-wrapper">
+  <div class="column-wrapper">
+    <app-column-table
+      [chartTitle]="'Transition State'"
+      [distributed]="true"
+      [legendState]="false"
+      [threeLines]="false"
+      [titleOptions]="['All', 'Current State']"
+      [data]="[{ name: 'Transitions', data: [1, 5, 4, 3, 2] }]"
+      [barWidth]="'45%'"
+      [barColors]="['#1FC599', '#43BCCD', '#6D32A5', '#F53361', '#F2A201']"
+    ></app-column-table>
+  </div>
+
+  <div class="pie-wrapper">
+    <app-pie-chart
+      [chartType]="'donut'"
+      [chartTitle]="'Due Date'"
+      [titleOptions]="'All'"
+      [legends]="['Completed Due Date', 'Nearing Due Date']"
+      [percents]="[3, 2]"
+    ></app-pie-chart>
+  </div>
+</div>

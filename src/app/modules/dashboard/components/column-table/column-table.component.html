@@ -1,0 +1,30 @@
+<div id="chart">
+  <div
+    class="chart-title"
+    [ngStyle]="{
+      position: threeLines ? 'absolute' : 'unset',
+      top: threeLines ? '-18px' : '0'
+    }"
+  >
+    <div class="title">{{ chartTitle }}</div>
+    <div class="sortable">
+      <div class="sort" *ngFor="let option of titleOptions; let i = index">
+        <hr *ngIf="i >= 1" />
+        <span>{{ option }}</span>
+        <img src="/assets/svg/chevron-thin-down-1.svg" alt="" />
+      </div>
+    </div>
+  </div>
+  <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [dataLabels]="chartOptions.dataLabels"
+    [plotOptions]="chartOptions.plotOptions"
+    [yaxis]="chartOptions.yaxis"
+    [xaxis]="chartOptions.xaxis"
+    [legend]="chartOptions.legend"
+    [colors]="chartOptions.colors"
+    [grid]="chartOptions.grid"
+    [stroke]="chartOptions.stroke"
+  ></apx-chart>
+</div>

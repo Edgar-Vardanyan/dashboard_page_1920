@@ -1,0 +1,59 @@
+<div class="line-chart-wrapper">
+  <div id="chart">
+    <div class="chart-title">
+      <div class="title">Cycle Time</div>
+      <div class="sortable">
+        <div class="sort">
+          <span>All</span>
+          <img src="/assets/svg/chevron-thin-down-1.svg" alt="" />
+        </div>
+
+        <hr />
+
+        <div class="sort">
+          <span>Current State</span>
+          <img src="/assets/svg/chevron-thin-down-1.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-info">
+      <div class="info">
+        <div class="info-name">Task Approving</div>
+        <div class="info-num">12 days (avg.)</div>
+      </div>
+
+      <div class="info">
+        <div class="info-name">Knowledge</div>
+        <div class="info-num">4 days (avg.)</div>
+      </div>
+
+      <div class="info">
+        <div class="info-name">Production</div>
+        <div class="info-num">13 days (avg.)</div>
+      </div>
+
+      <div class="info">
+        <div class="info-name">Live</div>
+        <div class="info-num">8 days (avg.)</div>
+      </div>
+
+      <div class="info">
+        <div class="info-name">Total</div>
+        <div class="info-num">37 days (avg.)</div>
+      </div>
+    </div>
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis"
+      [dataLabels]="chartOptions.dataLabels"
+      [grid]="chartOptions.grid"
+      [stroke]="chartOptions.stroke"
+      [title]="chartOptions.title"
+      [markers]="chartOptions.markers"
+      [yaxis]="chartOptions.yaxis"
+      [legend]="chartOptions.legend"
+    ></apx-chart>
+  </div>
+</div>

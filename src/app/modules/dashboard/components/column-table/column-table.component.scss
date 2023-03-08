@@ -1,0 +1,60 @@
+.chart-title {
+	margin: 0 0 10px 20px;
+	display: flex;
+	gap: 30px;
+	align-items: center;
+
+	hr {
+		border: 1px solid #80808080;
+		border-radius: 50%;
+		top: 6px;
+		right: 118px;
+		height: 20px;
+		position: absolute;
+	}
+
+	.title {
+		font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-15)/var(--unnamed-line-spacing-50) var(--unnamed-font-family-circular);
+		letter-spacing: var(--unnamed-character-spacing-0);
+		color: var(--unnamed-color-a3a6b9);
+		text-align: center;
+		text-transform: uppercase;
+
+	}
+
+	.sortable {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+
+		.sort {
+			position: relative;
+			display: flex;
+			gap: 10px;
+
+			span {
+				font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-13)/var(--unnamed-line-spacing-50) var(--unnamed-font-family-circular);
+				letter-spacing: var(--unnamed-character-spacing-0);
+				color: var(--unnamed-color-05081d);
+				text-align: left;
+			}
+
+			img {
+				width: 13px;
+			}
+		}
+	}
+}
+
+.chart-label {
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-13) var(--unnamed-font-family-circular);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-a3a6b9);
+	text-align: center;
+	text-transform: uppercase;
+	color: red !important;
+}
+
+#chart {
+	position: relative;
+}

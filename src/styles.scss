@@ -1,1 +1,199 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Circular, sans-serif;
+}
+
+.chart-categories {
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-13) var(--unnamed-font-family-circular);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-a3a6b9);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.apexcharts-xaxis-label {
+	position: absolute;
+	top: 50px;
+}
+
+:root {
+
+	/* Colors: */
+	--unnamed-color-57de69: #57DE69;
+	--unnamed-color-1fc599: #1FC599;
+	--unnamed-color-f53361: #F53361;
+	--unnamed-color-ff6f01: #FF6F01;
+	--unnamed-color-f2a201: #F2A201;
+	--unnamed-color-6d32a5: #6D32A5;
+	--unnamed-color-2b0f4d: #2B0F4D;
+	--unnamed-color-05081d: #05081D;
+	--unnamed-color-1d2585: #1D2585;
+	--unnamed-color-43bccd: #43BCCD;
+	--unnamed-color-465cc7: #465CC7;
+	--unnamed-color-ffffff: #FFFFFF;
+	--unnamed-color-f5f5f6: #F5F5F6;
+	--unnamed-color-e4e4e8: #E4E4E8;
+	--unnamed-color-a3a6b9: #A3A6B9;
+	--unnamed-color-6a6c78: #6A6C78;
+	--unnamed-color-000000: #000000;
+	--unnamed-color-afb0b7: #AFB0B7;
+	--unnamed-color-2d3047: #2D3047;
+	--unnamed-color-4e20db: #4E20DB;
+
+	/* Font/text values */
+	--unnamed-font-family-circular: Circular, sans-serif;
+	--unnamed-font-style-normal: normal;
+	--unnamed-font-weight-bold: bold;
+	--unnamed-font-weight-medium: normal;
+	--unnamed-font-weight-normal: normal;
+	--unnamed-font-size-12: 12px;
+	--unnamed-font-size-13: 13px;
+	--unnamed-font-size-15: 15px;
+	--unnamed-font-size-18: 18px;
+	--unnamed-font-size-21: 21px;
+	--unnamed-font-size-26: 26px;
+	--unnamed-font-size-36: 36px;
+	--unnamed-character-spacing-0: 0px;
+	--unnamed-line-spacing-13: 13px;
+	--unnamed-line-spacing-31: 31px;
+	--unnamed-line-spacing-33: 33px;
+	--unnamed-line-spacing-46: 46px;
+	--unnamed-line-spacing-50: 50px;
+	--unnamed-text-transform-uppercase: uppercase;
+}
+
+/* Character Styles */
+.unnamed-character-style-1 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-normal);
+	font-size: var(--unnamed-font-size-15);
+	line-height: var(--unnamed-line-spacing-31);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-6a6c78);
+}
+
+.unnamed-character-style-2 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-bold);
+	font-size: var(--unnamed-font-size-36);
+	line-height: var(--unnamed-line-spacing-46);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-2d3047);
+}
+
+.unnamed-character-style-3 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-bold);
+	font-size: var(--unnamed-font-size-18);
+	line-height: var(--unnamed-line-spacing-50);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-2d3047);
+}
+
+.unnamed-character-style-4 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-bold);
+	font-size: var(--unnamed-font-size-21);
+	line-height: var(--unnamed-line-spacing-50);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-2d3047);
+}
+
+.unnamed-character-style-5 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-normal);
+	font-size: var(--unnamed-font-size-21);
+	line-height: var(--unnamed-line-spacing-50);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-2d3047);
+}
+
+.unnamed-character-style-6 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-bold);
+	font-size: var(--unnamed-font-size-26);
+	line-height: var(--unnamed-line-spacing-33);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-2d3047);
+}
+
+.unnamed-character-style-7 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-medium);
+	font-size: var(--unnamed-font-size-21);
+	line-height: var(--unnamed-line-spacing-50);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-4e20db);
+}
+
+.unnamed-character-style-8 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-medium);
+	font-size: var(--unnamed-font-size-15);
+	line-height: var(--unnamed-line-spacing-50);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-afb0b7);
+	text-transform: var(--unnamed-text-transform-uppercase);
+}
+
+.unnamed-character-style-9 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-medium);
+	font-size: var(--unnamed-font-size-15);
+	line-height: var(--unnamed-line-spacing-50);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-4e20db);
+	text-transform: var(--unnamed-text-transform-uppercase);
+}
+
+.unnamed-character-style-10 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-medium);
+	font-size: var(--unnamed-font-size-15);
+	line-height: var(--unnamed-line-spacing-50);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-000000);
+	text-transform: var(--unnamed-text-transform-uppercase);
+}
+
+.unnamed-character-style-11 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-bold);
+	font-size: var(--unnamed-font-size-12);
+	line-height: var(--unnamed-line-spacing-13);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-afb0b7);
+	text-transform: var(--unnamed-text-transform-uppercase);
+}
+
+.unnamed-character-style-12 {
+	font-family: var(--unnamed-font-family-circular);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-medium);
+	font-size: var(--unnamed-font-size-13);
+	line-height: var(--unnamed-line-spacing-50);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-2d3047);
+}

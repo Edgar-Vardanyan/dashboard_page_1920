@@ -1,0 +1,23 @@
+<div id="chart">
+  <div class="chart-title">
+    <div class="title">{{ chartTitle }}</div>
+    <div class="sortable">
+      <div class="sort">
+        <span>{{ titleOptions }}</span>
+        <img src="/assets/svg/chevron-thin-down-1.svg" alt="" />
+      </div>
+    </div>
+  </div>
+  <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [dataLabels]="chartOptions.dataLabels"
+    [plotOptions]="chartOptions.plotOptions"
+    [yaxis]="chartOptions.yaxis"
+    [xaxis]="chartOptions.xaxis"
+    [legend]="chartOptions.legend"
+    [grid]="chartOptions.grid"
+    [labels]="chartOptions.labels"
+    [colors]="chartOptions.colors"
+  ></apx-chart>
+</div>

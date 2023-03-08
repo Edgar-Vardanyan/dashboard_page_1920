@@ -1,0 +1,45 @@
+.side-bar-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 96px;
+	height: 100%;
+	background-color: #05081D;
+	padding: 40px 0;
+	z-index: 9999;
+	margin-right: 20px;
+
+	.navbar {
+		height: 93%;
+		align-items: center;
+		justify-content: space-between;
+		display: flex;
+		flex-direction: column;
+
+		.links {
+			display: flex;
+			flex-direction: column;
+			gap: 100px;
+			position: relative;
+
+			.link-line {
+				position: absolute;
+				height: 93px;
+				background: #43BCCD;
+				width: 7px;
+				right: -37px;
+				top: -34px;
+			}
+
+			img {
+				cursor: pointer;
+			}
+		}
+
+		.plus {
+			img {
+				cursor: pointer;
+			}
+		}
+	}
+}
